@@ -2,33 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Ping coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Ping coming soon page</title>
 </head>
 <body>
+  <header>
+    <img src="images/logo.svg" alt="PING logo">
+  </header>
 
-  We are launching soon!
+  <main>
+    <h1>We are launching <strong>soon!</strong></h1>
+    <p class="notification">Subscribe and get notified</p>
 
-  Subscribe and get notified
+    <form>
+      <input id="input" type="email" placeholder="Your email address...">
+      <p class="error-msg"></p>
+      <button>Notify Me</button>
+    </form>
 
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
+    <div class="img-container">
+      <img src="images/illustration-dashboard.png" alt="overview of PING website">
+    </div>
+  </main>
 
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+    <div class="icons">
+      <a href="#"><ion-icon class="facebook" name="logo-facebook"></ion-icon></a>
+      <a href="#"><ion-icon class="twitter" name="logo-twitter"></ion-icon></a>
+      <a href="#"><ion-icon class="instagram" name="logo-instagram"></ion-icon></a>
+    </div>
+    <p class="copyright-msg">&copy Copyright Ping. All rights reserved.</p>
   </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

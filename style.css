@@ -1,0 +1,259 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue:hsl(223, 87%, 63%);
+    --pale-blue:hsl(223, 100%, 88%);
+    --light-red:hsl(354, 100%, 66%);
+    --gray:hsl(0, 0%, 59%);
+    --very-Dblue:hsl(209, 33%, 12%);
+
+    --fwS: 300;
+    --fwM: 600;
+    --fwB: 700;
+}
+
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: var(--fwS);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+header{
+    padding-top: 5rem;
+}
+
+header img{
+    margin: 0 auto;
+}
+
+main{
+    padding: 3rem 1rem;
+}
+
+h1{
+    font-size: 1.5rem;
+    color: var(--gray);
+    font-weight: var(--fwS);
+}
+
+strong{
+    display: inline-block;
+    color: var(--very-Dblue);
+    font-weight: var(--fwB);
+}
+
+.notification{
+    color: var(--gray);
+    font-size: .9rem;
+    padding-block: 1.75rem;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    width: 90%;
+    max-width: 350px;
+    padding: .75rem 1.25rem;
+    border-radius: 25px;
+    outline: none;
+    border: 1.5px solid var(--pale-blue);
+    margin-bottom: .75rem;
+    color: var(--very-Dblue);
+}
+
+.error-msg{
+    font-size: .75rem;
+    max-width: 80%;
+    margin-bottom: 1.8rem;
+    color: var(--light-red);
+    display: none;
+}
+
+
+.error{
+    border: 1.5px solid var(--light-red);
+}
+
+.error:focus{
+    border: 1.5px dashed var(--light-red);
+}
+
+.success:focus{
+    border: 1.5px dashed green;
+}
+
+input .success{
+    border: 1.5px solid green;
+}
+
+.success{
+    color: green;
+}
+
+input::placeholder{
+    color: var(--pale-blue);
+    font-size: 1rem;
+}
+
+button{
+    color: white;
+    background-color: var(--blue);
+    width: 90%;
+    max-width: 350px;
+    padding: .75rem 1.25rem;
+    border-radius: 25px;
+    outline: none;
+    border: 1px solid var(--blue);
+    font-weight: var(--fwS);
+    letter-spacing: .1rem;
+    box-shadow: 0px 5px 15px 0px var(--pale-blue) ;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+.img-container{
+    margin-top: 3rem;
+}
+
+footer{
+    padding-block: 5rem 3rem;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+}
+
+.icons a{
+    display: block;
+    text-decoration: none;
+}
+
+.icons a > * {
+    border-radius: 50%;
+    color:var(--blue);
+    font-size: 1.25rem;
+    padding: .45rem;
+    border: .1px solid var(--pale-blue);
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+}
+
+.copyright-msg{
+    padding-top: 2rem;
+    font-size: .8rem;
+    color: var(--gray);
+}
+
+.icons a > *:hover {
+    background-color: var(--blue);
+    color: white;
+    border: .1px solid var(--blue);
+}
+
+button:hover{
+    opacity: .8;
+}
+
+input:focus{
+    border: 1.5px dashed var(--blue);
+}
+
+button:focus{
+    outline: 1.5px dashed black;
+}
+
+
+@media (min-width:700px){
+
+
+    h1{
+        font-size: 3rem;
+    }
+
+    .notification{
+        font-size: 1.5rem;
+    }
+
+    form{
+        display: grid;
+        grid-template-columns: 1fr .5fr;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1rem;
+    }
+
+    input, .error-msg{
+        margin: 0;
+    }
+
+    input{
+        justify-self: end;
+        max-width: 350px;
+    }
+    .error-msg{
+        margin-top: .5rem;
+        padding-left: 25%;
+        max-width: 100%;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    button{
+        max-width: 150px;
+    }
+}
+
+@media (min-width:1000px){
+
+    input{
+        justify-self: end;
+        max-width: 450px;
+    }
+    button{
+        max-width: 175px;
+    }
+    .error-msg{
+        padding-left: 50px;
+    }
+
+    .img-container{
+        margin: 4rem auto;
+        max-width: 500px;
+    }
+
+    footer{
+        margin: 0;
+        padding: 0 0 3rem 0;
+    }
+}
+
+@media (min-width:1200px){
+    .error-msg{
+        padding-left: 0px;
+    }
+    .img-container{
+        max-width: 650px;
+    }
+
+}

@@ -1,6 +1,6 @@
-# Frontend Mentor - FAQ accordion card solution
+# Frontend Mentor - Ping coming soon page solution
 
-This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam).
+This is a solution to the [Ping coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da).
 
 ## Table of contents
 
@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://www.frontendmentor.io/solutions/accordian-using-clean-html-css-and-js-with-smooth-transitions-Yf2Bn_Dl2)
-- [Live Site URL](https://mohsin316.github.io/FAQ-Accordion-card/)
+- [Live Site URL](https://mohsin316.github.io/Ping-coming-soon-page/)
 
 ## My process
 
