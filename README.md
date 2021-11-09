@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://www.frontendmentor.io/solutions/accordian-using-clean-html-css-and-js-with-smooth-transitions-Yf2Bn_Dl2)
+- [Solution URL](https://www.frontendmentor.io/solutions/ping-coming-soon-page-with-clean-html-css-and-js-o_x_nON46)
 - [Live Site URL](https://mohsin316.github.io/Ping-coming-soon-page/)
 
 ## My process
